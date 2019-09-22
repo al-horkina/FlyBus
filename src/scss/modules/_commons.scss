@@ -11,5 +11,8 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 
+  @include respond-to(middleSmartphone) {
+    padding: 16px 0;
+  }
 
 }
