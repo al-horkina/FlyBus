@@ -1,46 +1,77 @@
 .header {
-	font-family: $titleFont;
-	font-size: 18px;
-	position: relative;
+  font-family: $titleFont;
+  font-size: 18px;
+  position: relative;
 
-	&__title {
-		font-size: 34px;
-		font-weight: normal;
-		line-height: 40px;
-		margin: 0;
-		padding: 30px 0 0;
+  &__title {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0;
+    padding: 30px 0 0;
 
-		@include respond-to(middleSmartphone) {
-			padding-top: 0;
-		}
-	}
+    @include respond-to(middleSmartphone) {
+      padding-top: 0;
+    }
+  }
 
-	&__subtitle {
-		margin: 0 0 15px;
-		font-size: 16px;
-		line-height: 19px;
-		letter-spacing: 0.3em;
-		font-weight: normal;
-		padding: 3px 0 10px 3px;
-	}
+  &__subtitle {
+    margin: 0 0 15px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+    padding: 3px 0 10px 3px;
+  }
 
-	&__text {
-		font-weight: normal;
-		font-size: 18px;
-		line-height: 21px;
-		background: #F0BB00;
-		border-radius: 30px;
-		display: inline;
-		padding: 11px 13px;
-		position: absolute;
-		top: 11px;
-		right: 28%;
+  &__lang {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    background: #F0BB00;
+    border-radius: 30px;
+    display: inline;
+    padding: 11px 13px;
+    position: absolute;
+    top: 11px;
+    right: 28%;
 
-		@include respond-to(middleSmartphone) {
-			top: 5px;
-			right: 16px;
-		}
-	}
+    @include respond-to(middleSmartphone) {
+      top: 5px;
+      right: 16px;
+    }
 
+    &--pages {
+      position: initial;
+    }
+  }
+
+  &--pages {
+    width: 100%;
+    max-width: 480px;
+    min-width: 342px;
+    margin: 0 auto;
+    @include flex-row-between();
+
+    @include respond-to(middleSmartphone) {
+      padding: 0 16px 0 25px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__arrow {
+    @include flex-row-center();
+    font-family: $titleFont;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: $mainColor;
+    text-decoration: none;
+  }
+
+  &__img {
+    padding-right: 8px;
+  }
 
 }
