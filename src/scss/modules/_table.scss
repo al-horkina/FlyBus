@@ -1,0 +1,41 @@
+.timetable {
+  font-family: $mainFont;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  @include respond-to(middleSmartphone) {
+    padding: 0 16px;
+
+  }
+
+}
+
+.table {
+  width: 100%;
+  max-width: 480px;
+  min-width: 320px;
+  margin: 0 auto;
+
+  & tr {
+    height: 32px;
+
+    &:nth-child(odd) {
+      background: #495E7B;
+    }
+
+    &:nth-child(even) {
+      background: #556C8C;
+    }
+
+    & td {
+      border-right: 1px dashed #374F70;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+}

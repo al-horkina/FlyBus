@@ -9,6 +9,8 @@ body {
   padding: 50px 0;
   color: $mainColor;
   min-height: 100vh;
+  max-height: 800px;
+
   box-sizing: border-box;
 
   @include respond-to(middleSmartphone) {

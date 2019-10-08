@@ -78,6 +78,16 @@ module.exports = {
             template: `${PATHS.src}/airport.html`,
             filename: './airport.html'
         }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/schedule-rs.html`,
+            filename: './schedule-rs.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/schedule-center.html`,
+            filename: './schedule-center.html'
+        }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
             {from: `${PATHS.src}/static`, to: ''},

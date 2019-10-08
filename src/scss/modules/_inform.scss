@@ -1,6 +1,10 @@
 .inform {
   margin: 20px 0;
 
+  &--pg {
+    margin: -20px 0 34px;
+  }
+
   &__box {
     max-width: 428px;
     margin: 45px auto 0;
@@ -41,6 +45,10 @@
     @include flex-row-between();
     padding-top: 5px;
 
+    &--long {
+      padding: 5px 45px 0;
+    }
+
     p {
       font-family: $mainFont;
       font-weight: normal;
@@ -58,9 +66,14 @@
     position: relative;
     padding: 2px 0 0 15px;
 
+    &--pg{
+      margin: 16px 0 0;
+    }
+
   }
 
   &__item {
+    z-index: -1;
     width: 148px;
     border-bottom: 1px solid $mainColor;
     position: relative;
@@ -69,6 +82,14 @@
 
     @include respond-to(middleSmartphone) {
       width: 120px;
+    }
+
+    &--long {
+      width: 221px;
+
+      @include respond-to(middleSmartphone) {
+        width: 155px;
+      }
     }
 
     &:before {

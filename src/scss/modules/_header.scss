@@ -25,25 +25,13 @@
   }
 
   &__lang {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    background: #F0BB00;
-    border-radius: 30px;
-    display: inline;
-    padding: 11px 13px;
-    position: absolute;
-    top: 11px;
-    right: 28%;
 
-    @include respond-to(middleSmartphone) {
+
+
+    /*@include respond-to(middleSmartphone) {
       top: 5px;
       right: 16px;
-    }
-
-    &--pages {
-      position: initial;
-    }
+    }*/
   }
 
   &--pages {
