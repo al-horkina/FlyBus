@@ -1,0 +1,16 @@
+.location {
+  font-size: 0;
+
+  &__frame {
+    width: 100%;
+    height: 100vh;
+    border: 0;
+  }
+
+  &__btn {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+  }
+}

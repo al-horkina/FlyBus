@@ -56,6 +56,12 @@
     letter-spacing: 0.04em;
     color: $mainColor;
     text-decoration: none;
+
+    &--map {
+      background: #556C8C;
+      border-radius: 20px;
+      padding: 12px;
+    }
   }
 
   &__img {

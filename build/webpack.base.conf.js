@@ -88,6 +88,11 @@ module.exports = {
             template: `${PATHS.src}/schedule-center.html`,
             filename: './schedule-center.html'
         }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/map.html`,
+            filename: './map.html'
+        }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
             {from: `${PATHS.src}/static`, to: ''},

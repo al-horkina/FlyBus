@@ -6,7 +6,7 @@ body {
   background-repeat: repeat;
   font-family: $mainFont;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 0;
   color: $mainColor;
   min-height: 100vh;
   max-height: 800px;
@@ -17,4 +17,8 @@ body {
     padding: 16px 0;
   }
 
+}
+
+.all {
+  padding: 0;
 }
