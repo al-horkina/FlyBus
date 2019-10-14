@@ -25,6 +25,7 @@
     height: 54px;
     margin-top: 12px;
     line-height: 54px;
+    transition: 0.5s all;
 
     &:hover {
       background: $mainColor;

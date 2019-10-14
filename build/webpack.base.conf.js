@@ -93,6 +93,51 @@ module.exports = {
             template: `${PATHS.src}/map.html`,
             filename: './map.html'
         }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/index-ru.html`,
+            filename: './index-ru.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/index-ua.html`,
+            filename: './index-ua.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/airport-ru.html`,
+            filename: './airport-ru.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/airport-ua.html`,
+            filename: './airport-ua.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/schedule-rs-ru.html`,
+            filename: './schedule-rs-ru.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/schedule-rs-ua.html`,
+            filename: './schedule-rs-ua.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/schedule-center-ru.html`,
+            filename: './schedule-center-ru.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/schedule-center-ua.html`,
+            filename: './schedule-center-ua.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/map-ru.html`,
+            filename: './map-ru.html'
+        }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
             {from: `${PATHS.src}/static`, to: ''},

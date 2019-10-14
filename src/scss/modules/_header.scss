@@ -26,8 +26,6 @@
 
   &__lang {
 
-
-
     /*@include respond-to(middleSmartphone) {
       top: 5px;
       right: 16px;
@@ -56,6 +54,11 @@
     letter-spacing: 0.04em;
     color: $mainColor;
     text-decoration: none;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &--map {
       background: #556C8C;

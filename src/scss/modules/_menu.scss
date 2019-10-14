@@ -35,7 +35,7 @@
   font-size: 16px;
   font-family: $titleFont;
 
-  &--pg{
+  &--pg {
     position: relative;
     top: 3px;
     right: -15px;
@@ -76,7 +76,7 @@
   -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
   transform: scale(1.1, 1.1) translate3d(0, 0, 0);
   cursor: pointer;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  //box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
 }
 
 .menu-open-button:hover {
@@ -115,8 +115,8 @@
 .green {
   z-index: 1;
   //background-color: #70CC72;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  /* box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);*/
 }
 
 .green:hover {
@@ -126,8 +126,8 @@
 
 .red {
   //background-color: #FE4365;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  /* box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);*/
 }
 
 .red:hover {
