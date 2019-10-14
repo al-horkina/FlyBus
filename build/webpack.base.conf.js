@@ -138,6 +138,11 @@ module.exports = {
             template: `${PATHS.src}/map-ru.html`,
             filename: './map-ru.html'
         }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATHS.src}/map-ua.html`,
+            filename: './map-ua.html'
+        }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
             {from: `${PATHS.src}/static`, to: ''},
