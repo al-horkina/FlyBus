@@ -1,5 +1,10 @@
 .footer {
   @include flex-row-center();
+  padding-bottom: 40px;
+
+  @include respond-to(middleSmartphone) {
+    padding-bottom: 0;
+  }
 
   &__img {
     padding-right: 7px;
